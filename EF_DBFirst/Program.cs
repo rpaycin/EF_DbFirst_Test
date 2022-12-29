@@ -13,6 +13,9 @@
 //belirli path te contex ve entity ler oluşmasını istiyorsan -ContextDir ve -OutputDir
 //Scaffold-DbContext 'Data Source=194.61.118.220; Initial Catalog= DISSELLING; Persist Security Info=True;User ID= disusr;Password=Dis%022;TrustServerCertificate=True' Microsoft.EntityFrameworkCore.SqlServer -ContextDir Contexts -OutputDir Entities -Tables OfferModel
 
+//Force parametresi ile projede context dahai olsa db deki son değişiklikleri dbcontext e yazar
+//Scaffold-DbContext 'Data Source=194.61.118.220; Initial Catalog= DISSELLING; Persist Security Info=True;User ID= disusr;Password=Dis%022;TrustServerCertificate=True' Microsoft.EntityFrameworkCore.SqlServer -ContextDir Contexts -OutputDir Entities -Tables OfferModel,OutApplicationInformation -Force
+
 //2.dotnet CLI(CommandLine Interface) yani cmd den kullanabilmek için önce Microsoft.EntityFrameworkCore.Design aşağıdaki gibi komut yeterli => dotnet ef dbcontext scaffold 'ConnectionString' Microsoft.EntityFrameworkCore.[Provider] neyse
 //dotnet ef dbcontext scaffold 'Data Source=194.61.118.220; Initial Catalog= DISSELLING; Persist Security Info=True;User ID= disusr;Password=Dis%022;TrustServerCertificate=True' Microsoft.EntityFrameworkCore.SqlServer
 //dotnet ef komutu çalışmıyorsa global olarak cmd de kur => dotnet tool install --global dotnet-ef
